@@ -10,7 +10,7 @@
 * Doctype
 * IE-Klassen im html-Tag
 * chromeframe/IE=edge
-* meta-viewport
+* meta-viewport: http://html5-mobile.de/blog/meta-viewport-fuer-mobile-anpassen
 
 
 ## Wichtige Bibliotheken
