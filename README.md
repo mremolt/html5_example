@@ -19,3 +19,14 @@
 ** Feature-Detection
 * normalize.css: http://necolas.github.com/normalize.css/
 
+== Überblick über einige wichtige semantische HTML5-Tags ==
+
+* http://html5doctor.com/ als erste Anlaufstelle
+* section
+* header/footer
+* aside
+* nav
+* article
+* hgroup
+* time
+
