@@ -47,3 +47,11 @@
 ** z.B. flexbox
 ** CSS3-Features wie border-radius oder gradient
 ** Alles ist gut ... wenn es nicht den IE/legacy Browser gäbe
+
+
+== IE-Fallbacks ==
+* aktueller Status: ARGH!
+* manchmal mit kleinen Tricks: dispay inline-block im IE7
+* manchmal über alternative Layouts (flexbox -> float)
+* manchmal über Polyfills: https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills
+** z.B. CSS3 PIE: http://css3pie.com/

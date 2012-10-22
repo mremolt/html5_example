@@ -24,6 +24,17 @@ header, footer, #container, aside, article {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+  behavior: url(/js/vendor/PIE.htc);
+}
+
+body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+
+  -webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	box-orient: vertical;
 }
 
 body > header {
@@ -72,4 +83,29 @@ aside {
   box-flex: 1;
 
   border: 1px solid black;
+}
+
+footer {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  box-flex: 0;
+}
+
+html.lt-ie8 nav ul li {
+  zoom: 1;
+  display: inline;
+}
+
+html.no-flexbox #main {
+  float: left;
+  width: 70%;
+}
+
+html.no-flexbox aside {
+  float: right;
+  width: 20%;
+}
+
+html.no-flexbox div.clear {
+  clear: both;
 }
