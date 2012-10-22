@@ -109,3 +109,50 @@ html.no-flexbox aside {
 html.no-flexbox div.clear {
   clear: both;
 }
+
+@media only screen and (max-width: 767px) {
+  header {
+    border: 1px solid green;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  body > header h2 {
+    display: none;
+  }
+
+  header nav ul li {
+    display: list-item;
+    text-align: center;
+  }
+
+  #container {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+  }
+
+  section#main {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    box-ordinal-group: 2;
+  }
+
+  html.no-flexbox #main {
+    float: none;
+    display: block;
+    width: 90%;
+  }
+
+  html.no-flexbox aside {
+    float: none;
+    display: block;
+    width: 90%;
+  }
+
+}
+
+
+

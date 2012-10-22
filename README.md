@@ -55,3 +55,13 @@
 * manchmal über alternative Layouts (flexbox -> float)
 * manchmal über Polyfills: https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills
 ** z.B. CSS3 PIE: http://css3pie.com/
+
+
+== Responsive Layouts ==
+* passen sich u.a. der Fenstergröße des Browsers an (oder portrait/landscape
+  ...)
+* funktioniert über sog. media queries:
+** z.B. folgende Regeln gelten, falls die Fensterbreite maximal 800px beträgt
+* für IE (falls man es braucht): https://github.com/scottjehl/Respond
+
+
