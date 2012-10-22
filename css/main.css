@@ -1,0 +1,75 @@
+header nav {
+  text-align: right;
+  margin-right: 20px;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+header nav ul li a {
+  color: #333;
+}
+
+header nav ul li a:hover {
+  color: #666;
+}
+
+header, footer, #container, aside, article {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid black;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+body > header {
+  background: #CCC; /*fallback for non-CSS3 browsers*/
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#CCC) to(#EEE)); /*old webkit*/
+  background: -webkit-linear-gradient(#CCC, #EEE); /*new webkit*/
+  background: -moz-linear-gradient(#CCC, #EEE); /*gecko*/
+  background: -ms-linear-gradient(#CCC, #EEE); /*IE10*/
+  background: -o-linear-gradient(#CCC, #EEE); /*opera 11.10+*/
+  background: linear-gradient(#CCC, #EEE); /*future CSS3 browsers*/
+}
+
+body > header h2 {
+  padding-top: 5px;
+  color: #999;
+}
+
+p {
+  margin-left: 20px;
+}
+
+#container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+}
+
+section#main {
+  -webkit-box-flex: 4;
+  -moz-box-flex: 4;
+  box-flex: 4;
+
+  border: 1px solid black;
+  margin: 20px;
+}
+
+article header {
+  margin: 0px;
+  padding: 10px;
+  border: 0px;
+}
+
+aside {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+
+  border: 1px solid black;
+}
