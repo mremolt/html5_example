@@ -1,11 +1,11 @@
-= Vortrag über HTML5 ganz praktisch: Gliederung =
+# Vortrag über HTML5 ganz praktisch: Gliederung
 
-== Allgemein ==
+## Allgemein
 
 * http://html5boilerplate.com/ ist ein super Startpunkt!
 
 
-== Grundlegende HTML5-Struktur ==
+## Grundlegende HTML5-Struktur
 
 * Doctype
 * IE-Klassen im html-Tag
@@ -13,7 +13,7 @@
 * meta-viewport
 
 
-== Wichtige Bibliotheken ==
+## Wichtige Bibliotheken
 
 * modernizr: http://modernizr.com/
 ** HTML5-Tags für legacy Browser
@@ -21,7 +21,7 @@
 * normalize.css: http://necolas.github.com/normalize.css/
 
 
-== Überblick über einige wichtige semantische HTML5-Tags ==
+## Überblick über einige wichtige semantische HTML5-Tags 
 
 * http://html5doctor.com/ als erste Anlaufstelle
 * section
@@ -33,7 +33,7 @@
 * time
 
 
-== Layout mit CSS3 ==
+## Layout mit CSS3 
 
 * wichtige Regel: w3c-Validator ignorieren!!!
 
@@ -49,7 +49,7 @@
 ** Alles ist gut ... wenn es nicht den IE/legacy Browser gäbe
 
 
-== IE-Fallbacks ==
+## IE-Fallbacks 
 * aktueller Status: ARGH!
 * manchmal mit kleinen Tricks: dispay inline-block im IE7
 * manchmal über alternative Layouts (flexbox -> float)
@@ -57,7 +57,7 @@
 ** z.B. CSS3 PIE: http://css3pie.com/
 
 
-== Responsive Layouts ==
+## Responsive Layouts 
 * passen sich u.a. der Fenstergröße des Browsers an (oder portrait/landscape
   ...)
 * funktioniert über sog. media queries:
