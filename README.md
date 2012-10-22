@@ -11,3 +11,11 @@
 * chromeframe/IE=edge
 * meta-viewport
 
+
+== Wichtige Bibliotheken ==
+
+* modernizr: http://modernizr.com/
+** HTML5-Tags für legacy Browser
+** Feature-Detection
+* normalize.css: http://necolas.github.com/normalize.css/
+
