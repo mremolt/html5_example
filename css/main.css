@@ -60,12 +60,18 @@ p {
   display: -webkit-box;
   display: -moz-box;
   display: box;
+  display: -ms-flexbox;
+  -ms-flex-direction: row;
+  -ms-flex-align: stretch;
+  -ms-flex-pack: justify;
 }
 
 section#main {
   -webkit-box-flex: 4;
   -moz-box-flex: 4;
   box-flex: 4;
+  width: auto;
+  -ms-flex: 4;
 
   border: 1px solid black;
   margin: 20px;
@@ -81,14 +87,22 @@ aside {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   box-flex: 1;
+  -ms-flex: 1;
 
   border: 1px solid black;
+  width: auto;
 }
 
 footer {
   -webkit-box-flex: 0;
   -moz-box-flex: 0;
   box-flex: 0;
+}
+
+p.chromeframe {
+  border: 2px solid red;
+  background: #ff9999;
+  padding: 15px;
 }
 
 html.lt-ie8 nav ul li {
@@ -132,6 +146,9 @@ html.no-flexbox div.clear {
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
     box-orient: vertical;
+    -ms-flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   section#main {
