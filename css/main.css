@@ -27,16 +27,6 @@ header, footer, #container, aside, article {
   behavior: url(/js/vendor/PIE.htc);
 }
 
-body {
-  display: -webkit-box;
-  display: -moz-box;
-  display: box;
-
-  -webkit-box-orient: vertical;
-	-moz-box-orient: vertical;
-	box-orient: vertical;
-}
-
 body > header {
   background: #CCC; /*fallback for non-CSS3 browsers*/
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#CCC) to(#EEE)); /*old webkit*/
@@ -59,8 +49,8 @@ p {
 #container {
   display: -webkit-box;
   display: -moz-box;
-  display: box;
   display: -ms-flexbox;
+  display: box;
   -ms-flex-direction: row;
   -ms-flex-align: stretch;
   -ms-flex-pack: justify;
@@ -70,8 +60,8 @@ section#main {
   -webkit-box-flex: 4;
   -moz-box-flex: 4;
   box-flex: 4;
-  width: auto;
   -ms-flex: 4;
+  width: auto;
 
   border: 1px solid black;
   margin: 20px;
@@ -93,21 +83,20 @@ aside {
   width: auto;
 }
 
-footer {
-  -webkit-box-flex: 0;
-  -moz-box-flex: 0;
-  box-flex: 0;
-}
-
 p.chromeframe {
   border: 2px solid red;
   background: #ff9999;
   padding: 15px;
+  margin-right: 20px;
 }
 
 html.lt-ie8 nav ul li {
   zoom: 1;
   display: inline;
+}
+
+html.no-flexbox #container {
+  display: block;
 }
 
 html.no-flexbox #main {
@@ -155,6 +144,12 @@ html.no-flexbox div.clear {
     -webkit-box-ordinal-group: 2;
     -moz-box-ordinal-group: 2;
     box-ordinal-group: 2;
+    -ms-flex-order: 2;
+    -ms-flex: none;
+  }
+
+  aside {
+    -ms-flex: none;
   }
 
   html.no-flexbox #main {
