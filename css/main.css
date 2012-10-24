@@ -113,6 +113,8 @@ html.no-flexbox div.clear {
   clear: both;
 }
 
+
+/* Smartphones ----------- */
 @media only screen and (max-width: 767px) {
   header {
     border: 1px solid green;
@@ -166,15 +168,29 @@ html.no-flexbox div.clear {
 
 }
 
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* iPads ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  header nav ul li a {
+    font-size: 14px;
+  }
+
   section#main {
     float: left;
-    width: 60% !important;
   }
 
   aside {
     float: right;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+  section#main {
+    width: 60% !important;
+  }
+
+  aside {
     width: 25% !important;
   }
 }
@@ -182,15 +198,12 @@ html.no-flexbox div.clear {
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   section#main {
-    float: left;
     width: 60% !important;
   }
 
   aside {
-    float: right;
     width: 25% !important;
   }
-  
 }
 
 
